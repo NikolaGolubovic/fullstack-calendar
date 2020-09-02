@@ -7,5 +7,5 @@ const server = http.createServer(app);
 const PORT = process.env.PORT || 4000;
 
 server.listen(PORT, () => {
-  console.log("Server konektovan na portu " + PORT);
+  console.log("Server connected to the port " + PORT);
 });
