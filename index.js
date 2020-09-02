@@ -4,7 +4,7 @@ const app = require("./app");
 
 const server = http.createServer(app);
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3005;
 
 server.listen(PORT, () => {
   console.log("Server connected to the port " + PORT);
