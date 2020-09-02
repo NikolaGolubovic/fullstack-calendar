@@ -1,6 +1,6 @@
 // const { Pool } = require("pg");
 
-const pool = new Pool();
+// const pool = new Pool();
 
 const Pool = require("pg-pool");
 const url = require("url");
