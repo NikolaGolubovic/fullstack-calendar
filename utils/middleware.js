@@ -1,5 +1,5 @@
 const errorHandler = (errors, req, res, next) => {
-  console.log(errors.message);
+  console.log("ERRORS", errors.message);
   if (Array.isArray(errors)) {
     let error = errors.map((err) => err.message);
     res.send(error);
@@ -9,7 +9,7 @@ const errorHandler = (errors, req, res, next) => {
     res.status(404).json({ msg: "GRESKA" });
   }
 
-  res.status(400).json({ msg: errors.message });
+  return res.status(400).json({ message: errors.message });
 };
 
 module.exports = {

@@ -17,8 +17,6 @@ const config = {
   ssl: true,
 };
 
-console.log("config", config);
-
 const pool = new Pool(config);
 
 module.exports = {
