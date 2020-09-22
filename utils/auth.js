@@ -1,7 +1,7 @@
 const auth = (request, _, next) => {
   const authorization = request.get("authorization");
   if (!authorization) {
-    throw new Error("There is some problem with token");
+    throw new Error("You need to be logged to create Survey");
   }
   if (authorization && authorization.toLowerCase().startsWith("bearer ")) {
     request.token = authorization.substring(7);

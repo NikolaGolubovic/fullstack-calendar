@@ -24,7 +24,6 @@ router.get("/", auth, async (req, res) => {
 router.post("/", auth, async (req, res, next) => {
   try {
     const decoded = jwt.verify(req.token, process.env.SECRET);
-    console.log("decoded", decoded);
     if (!decoded || !decoded.id) {
       return res.status(404).send("Token is missing");
     }

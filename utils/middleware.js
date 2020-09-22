@@ -9,7 +9,7 @@ const errorHandler = (errors, req, res, next) => {
     res.status(404).json({ msg: "GRESKA" });
   }
 
-  return res.status(400).json({ message: errors.message });
+  return res.status(404).json({ message: errors.message });
 };
 
 module.exports = {

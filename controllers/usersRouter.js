@@ -16,7 +16,6 @@ router.post("/", async (req, res, next) => {
       [username]
     );
     if (foundUsername.rows.length !== 0) {
-      console.log(foundUsername.rows);
       throw {
         message:
           "User with that name already exists, please choose another name",
