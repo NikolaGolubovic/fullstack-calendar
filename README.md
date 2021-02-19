@@ -1,3 +1,7 @@
+username: user
+password: password
+
+
 # PERN fullstack-calendar
 
 [LINK](https://sweetcalendar.herokuapp.com/)
