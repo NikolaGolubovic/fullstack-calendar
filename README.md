@@ -1,6 +1,16 @@
+### DESCRIPTION
+
+Use Calendar to create Events
+
+### Credentials
+
+username: user  
+password: password
+
+
 # PERN fullstack-calendar
 
-[LINK](https://sweetcalendar.herokuapp.com/)
+[LINK](https://happy-survey.onrender.com/)
 
 # FrontEnd repository
 
